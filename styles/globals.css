@@ -2,32 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Desktop-Design ============>=======>>>>>=====>>> */
+/* Header */
+.tabs a li {
+  @apply cursor-pointer flex items-center hover:text-gray-300;
+}
+.tabs a li:after {
+  content: "";
+  @apply absolute bg-[#fff] h-[3px] w-[0px] left-0 -bottom-1 rounded-[30px] transition-all ease-in-out duration-1000;
+}
+.tabs a li:hover:after {
+  @apply w-full;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+/* Header */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Body */
+.banner{
+  background-image: url('/img/herobanner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+.hero-banner{
+  @apply bg-[#11111179] text-[#fff] px-10 py-20;
+}
+/* sectonOne */
+.secpic{
+  width: 100%;
+}
+/* Body */
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+/* Footer */
+
+/* Footer */
+/* Desktop-Design ============>=======>>>>>=====>>> */
