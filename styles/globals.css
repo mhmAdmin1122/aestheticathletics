@@ -27,6 +27,10 @@
   @apply bg-[#11111179] text-[#fff] px-10 py-20;
 }
 /* sectonOne */
+.sectionOne{
+  @apply h-[600px] shadow-md shadow-gray-300 rounded-lg overflow-hidden;
+  background-image: linear-gradient(120deg, #6d6d6d, #dbdbdb, #ececec);
+}
 .secpic{
   width: 100%;
 }
